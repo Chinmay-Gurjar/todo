@@ -1,0 +1,4 @@
+{% if users_list %}
+{% for users in user_list %}
+	<li> {{ users.username }}
+{% endfor %}

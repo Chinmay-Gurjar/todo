@@ -1,0 +1,5 @@
+{% if users_list %}
+	{% for users in users_list %}
+		<li><a href = {% url 'todo:Spec_todo' users.username %} >{{users.username}}</a>
+	{% endfor %}
+{% endif %}

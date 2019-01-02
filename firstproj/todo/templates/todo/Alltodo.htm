@@ -1,0 +1,9 @@
+{% if all_todo %}
+	<ul>
+	{% for t in all_todo %}
+		<li> {{ t.description }} </li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p> Nothing found!!  </p>
+{% endif %}

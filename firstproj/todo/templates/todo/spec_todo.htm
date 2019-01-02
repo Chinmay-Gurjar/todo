@@ -1,0 +1,7 @@
+<h1> {{ utodo.username }} </h1>						
+
+<ul>
+	{% for t in utodo.user_todo_set.all %}
+		<li> {{ t.description }} </li>
+	{% endfor %}
+</ul>
