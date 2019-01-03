@@ -1,9 +1,18 @@
 {% if all_todo %}
-	<ul>
-	{% for t in all_todo %}
-		<li> {{ t.description }} </li>
+	<table>
+		<tr>
+			<th> Todo </th>
+			<th> User </th>
+			<th> status </th>
+		</tr>
+		{% for t in all_todo %}
+		<tr>
+			<td> {{ t.description }} </td>
+			<td> {{ t.user }} </td>
+			<td> {{ t.flag }} </td>
+		</tr>
 	{% endfor %}
-	</ul>
+	</table>
 {% else %}
 	<p> Nothing found!!  </p>
 {% endif %}
